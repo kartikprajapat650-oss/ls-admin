@@ -1,5 +1,5 @@
 export async function backendFetch(path: string, options: RequestInit = {}) {
-  const baseUrl = process.env.NEXT_PUBLIC_BACKEND_URL || process.env.BACKEND_URL || 'http://localhost:4000';
+  const baseUrl ="ls-backend-production-bdef.up.railway.app";
   const response = await fetch(`${baseUrl}${path}`, {
     ...options,
     headers: {
