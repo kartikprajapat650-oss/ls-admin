@@ -1,5 +1,5 @@
 export async function backendFetch(path: string, options: RequestInit = {}) {
-  const baseUrl ="ls-backend-production-bdef.up.railway.app";
+  const baseUrl ="https://ls-backend-production-bdef.up.railway.app/";
   const response = await fetch(`${baseUrl}${path}`, {
     ...options,
     headers: {
