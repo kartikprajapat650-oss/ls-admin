@@ -1,7 +1,7 @@
 import axios, { AxiosInstance, AxiosError, InternalAxiosRequestConfig } from 'axios';
 import { getSession } from 'next-auth/react';
 
-const baseURL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:4000';
+const baseURL = "https://ls-backend-production-bdef.up.railway.app/";
 
 const axiosInstance: AxiosInstance = axios.create({
   baseURL,
